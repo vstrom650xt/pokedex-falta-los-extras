@@ -11,8 +11,7 @@ body, html {
     display: grid;
     grid-template-columns: 300px 300px 300px ;
     grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px;
-    width: 300px;
-    height: 300px;
+
     grid-template-areas:
         "fila7  fila7  fila7"
         "fila1  fila1  fila1"
@@ -37,6 +36,11 @@ body, html {
 
 
 }
+.casilla:first-child {
+    writing-mode: vertical-lr;
+ text-orientation: upright;
+ }
+
 
 .encabezado-c{
     border: solid 2px black;
@@ -44,24 +48,20 @@ body, html {
 
 }
 h1{
-    bottom: 230px;
+    bottom: 430px;
     left: 380px;
     position: relative;
 }
 h2{
-    bottom: 180px;
+    bottom: 380px;
     left: 250px;
     position: relative;
 }
 
-h2:hover{
-    text-shadow: 1px 1px 2px black;
 
-}
 
-a{
-    text-decoration: none;
-
+a:active{
+    text-shadow: 12px 14px 14px black;
 
 }
 
